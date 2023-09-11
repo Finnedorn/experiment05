@@ -12,6 +12,7 @@
 :root {
 	--color-bg-white: #ffffff;
     --color-bg-icon-black: #23272a;
+    --color-section-bg-grey: #f6f6f6;
 	--color-section-bg-blue: #2a5ee8;
 	--color-icon-text-blue: #7289da;
 	--color-icon-text-white: #ffffff;
@@ -24,11 +25,42 @@
     flex-direction: row;
 }
 
-body {
-    background-color: var(--background-color);
-}
-
 .debug {
     border: 1px solid black;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5px;
+}
+
+.d-flex  {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+/*header*/
+
+header {
+    background-color: var(--color-section-bg-blue);
+}
+
+/*main*/
+
+.main-section {
+    padding: 60px;
+}
+
+.even {
+    background-color: var(--color-section-bg-grey);
+}
+
+/*footer*/
+
+footer {
+    background-color: var(--color-bg-icon-black);
+    color: var(--color-icon-text-white);
+}
