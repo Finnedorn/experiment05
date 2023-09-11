@@ -9,11 +9,12 @@
 
 /*root*/
 
-:root{
-    --text-pink: #e53170;
-    --text-light-blue: #68cbf2;
-    --icon-black: #0f0e17;
-    background-color: #fffffe;
+:root {
+	--color-bg-white: #ffffff;
+    --color-bg-icon-black: #23272a;
+	--color-section-bg-blue: #2a5ee8;
+	--color-icon-text-blue: #7289da;
+	--color-icon-text-white: #ffffff;
 }
 
 /*utility*/
@@ -24,5 +25,10 @@
 }
 
 body {
-    background-color: var(--icon-black);
+    background-color: var(--background-color);
 }
+
+.debug {
+    border: 1px solid black;
+}
+
