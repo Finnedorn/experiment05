@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Fredoka', sans-serif;
+    font-family: 'Noto Sans Linear B', sans-serif;
 }
 
 /*root*/
@@ -35,17 +35,54 @@
     padding: 0 5px;
 }
 
+ul {
+    list-style: none;
+}
+
+a {
+    color: var(--color-icon-text-white);
+    display: block;
+    padding: 6px 10px;
+    text-decoration: none;
+}
+
+/*flex-utility*/
+
 .d-flex  {
+    display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
     align-content: center;
 }
 
+.f-center {
+    justify-content: center;
+}
+
+
 /*header*/
 
 header {
     background-color: var(--color-section-bg-blue);
+}
+
+.nav-margin {
+    margin-top: 10px;
+}
+
+#hero {
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+#hero .container {
+    min-height: 500px;
 }
 
 /*main*/
